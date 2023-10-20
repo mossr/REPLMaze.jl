@@ -219,7 +219,7 @@ end
 
 
 function createmaze(w, h)
-    M = fill(WALL, w, h)
+    M = fill(WALL, h, w) # note width = columns, height = rows``
     V = falses(size(M))
     queue = []
 
