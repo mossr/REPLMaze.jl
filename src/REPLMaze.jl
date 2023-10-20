@@ -69,17 +69,22 @@ global FLAG = paint("🚩", COLORS[:red])
 global DIRS = [[0,2], [2,0], [0,-2], [-2,0]]
 
 
-function play(; w=25, h=25, po=false)
+function play(; w=25, h=25, po=false, agent=AGENT, flag=FLAG)
     global POSITION
     global PAUSED
     global SUBPIXEL
     global PO
     global TIMEOUT
     global MAXTIMEOUT
+    global AGENT
+    global FLAG
 
     TIMEOUT = 0
     PAUSED = false
     PO = po
+
+    AGENT = agent
+    FLAG = flag
 
     hide_cursor()
     clearscreen()

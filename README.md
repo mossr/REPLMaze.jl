@@ -28,7 +28,7 @@ Press `p` to turn on partial observability (i.e., can only see through a 5x5 win
 
 ## Installation
 ```julia
-] add https://github.com/mossr/Maze.jl
+] add https://github.com/mossr/REPLMaze.jl
 ```
 
 ## Gameplay
@@ -56,6 +56,11 @@ The game will start automatically.
 ## Other options
 - `play(w=25, h=25)`: Change the width and height of the generated maze.
 - `play(po=true)`: Start the game in partially observable mode.
+- `play(agent="🐭", flag="🧀")`: Set the `agent` and `flag` icons (e.g., use `\:mouse:<TAB>` in the REPL).
+
+<p align="center">
+  <img src="./img/maze-emojis.png">
+</p>
 
 
 ---
