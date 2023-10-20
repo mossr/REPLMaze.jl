@@ -77,6 +77,7 @@ function play(; w=25, h=25, po=false)
     global TIMEOUT
     global MAXTIMEOUT
 
+    TIMEOUT = 0
     PAUSED = false
     PO = po
 
