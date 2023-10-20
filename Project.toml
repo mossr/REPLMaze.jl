@@ -3,5 +3,8 @@ uuid = "124a7ef3-0f4b-4896-aed6-e944e7e0912b"
 authors = ["Robert Moss <rmoss92@gmail.com>"]
 version = "0.1.0"
 
+[compat]
+julia = "1"
+
 [deps]
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
