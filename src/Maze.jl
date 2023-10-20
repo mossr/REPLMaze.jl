@@ -44,7 +44,9 @@ global const KEY_TICK = '`'
 global const SCOREDOT = 10
 global const SCORESUPERDOT = 50
 
+global DELAY = 0.033
 global TIMEOUT = 0
+global MAXTIMEOUT = 120/DELAY
 global VELOCITY_STEP = 1
 global POSITION = missing
 global POSITION′ = missing
@@ -72,6 +74,8 @@ function play(; w=25, h=25, po=false)
     global PAUSED
     global SUBPIXEL
     global PO
+    global TIMEOUT
+    global MAXTIMEOUT
 
     PAUSED = false
     PO = po
@@ -86,7 +90,7 @@ function play(; w=25, h=25, po=false)
     subpixelmove = false
     Mfo = deepcopy(M) # fully observable maze
 
-    while !PAUSED
+    while !PAUSED && TIMEOUT <= MAXTIMEOUT
         subpixelmove = spc == SUBPIXEL
         if subpixelmove
             spc = 0
@@ -94,7 +98,7 @@ function play(; w=25, h=25, po=false)
         spc += 1
 
         PAUSED = game!(M; w, h, subpixelmove, Mfo)
-        sleep(0.033)
+        sleep(DELAY)
     end
 
     close_keyboard_buffer()
