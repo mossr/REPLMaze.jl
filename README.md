@@ -1,4 +1,4 @@
-# Maze.jl
+# REPLMaze.jl
 
 A maze game in the Julia REPL.
 
@@ -33,7 +33,7 @@ Press `p` to turn on partial observability (i.e., can only see through a 5x5 win
 
 ## Gameplay
 ```julia
-using Maze
+using REPLMaze
 ```
 The game will start automatically.
 - Hit `backtick` to pause the game.

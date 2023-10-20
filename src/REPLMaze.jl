@@ -1,4 +1,4 @@
-module Maze
+module REPLMaze
 
 using Random
 
@@ -403,4 +403,4 @@ function keypress!(w, h)
 end
 
 
-end # module Maze
+end # module

@@ -1,4 +1,4 @@
-name = "Maze"
+name = "REPLMaze"
 uuid = "124a7ef3-0f4b-4896-aed6-e944e7e0912b"
 authors = ["Robert Moss <rmoss92@gmail.com>"]
 version = "0.1.0"
