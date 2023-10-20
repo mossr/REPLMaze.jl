@@ -10,6 +10,9 @@ export
     PIX,
     COLORS
 
+# play when running `using REPLMaze`
+__init__() = play()
+
 global const COLORS = Dict(
     :black => "\e[0;30m",
     :red => "\e[0;31m",
